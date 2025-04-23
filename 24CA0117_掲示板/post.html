@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/decor.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>投稿画面</title>
+</head>
+<body>
+    <div class="bulletin-board">
+        <h1>掲　示　板</h1>
+        <h2>-POST-</h2>
+        <form action="PostServlet" method="POST">
+            <label for="name">名前:</label>
+            <input type="text" id="name" name="name" required>
+        </br>
+        </br>
+                       
+            <textarea id="comment" name="message" rows="6" cols="60"></textarea>
+            <br>
+            
+            <label for="fontSize">文字サイズ:</label>
+            
+            <select id="fontSize" name="fontSize">
+                <option value="12px">小</option>
+                <option value="16px">中</option>
+                <option value="20px">大</option>
+                <option value="24px">特大</option>
+            </select>
+            
+            
+            <label for="color">文字色:</label>
+            <input type="color" id="color" name="color">
+
+
+            <label for="fontWeight">太さ:</label>
+            <select id="fontWeight" name="fontWeight">
+                <option value="12px">小</option>
+                <option value="lighter">細</option>
+                <option value="normal">普</option>
+                <option value="bold">太</option>
+                <option value="bolder">極太</option>
+            </select>
+
+            <br>
+        <br>
+        <br>
+            
+            <button type="submit">投稿</button>
+        </form>
+        <br>
+        <a href="index.html">メニューに戻る</a>
+    </div>
+   
+    
+</body>
+
+</html>
