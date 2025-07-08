@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>母の味処 - チェックアウト</title>
+  <link rel="stylesheet" href="decor.css">
+  <script src="order.js" defer></script>
+</head>
+<body>
+  <h1>母の味処</h1>
+
+  <h2>お会計</h2>
+
+  <h3>注文履歴</h3>
+  <table id="orderHistory">
+    <tr>
+      <th>メニュー</th>
+      <th>数量</th>
+      <th>小計</th>
+    </tr>
+    <!-- Order items will be dynamically added here via JavaScript -->
+  </table>
+
+  <h3>お支払い方法</h3>
+  <div>
+    <label><input type="radio" name="paymentMethod" value="cash"> 現金</label>
+    <label><input type="radio" name="paymentMethod" value="creditCard"> クレジットカード</label>
+    <label><input type="radio" name="paymentMethod" value="suica"> 電子マネー（Suica）</label>
+    <label><input type="radio" name="paymentMethod" value="paypay"> 電子マネー（PayPay）</label>
+    <label><input type="radio" name="paymentMethod" value="applePay"> Apple Pay</label>
+  </div>
+
+  <button onclick="submitOrder()">注文を確定する</button>
+  <!-- HTML Button to Go Back (Only on Checkout Page) -->
+  <button class="back-button" onclick="goBack()">← 戻る</button>
+
+  <footer>
+    <p>&copy; 2025 Hsu Myat Paing (24CA0117), All rights reserved.</p>
+  </footer>
+</body>
+</html>

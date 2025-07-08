@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel = "stylesheet" href="decor.css">
+  <script src="order.js"></script>
+  <title>take_out</title>
+  
+</head>
+<body>
+  <h1>母の味処Take-out</h1>
+  <h2>母の丼注文システム</h2>
+
+  <h2>商品選択</h2>
+  <div class="product-container">
+    <div class="product">
+      <p>牛丼</p>
+      <img src="images/beef_don_.jpg" alt="牛丼">
+      <p>¥990</p>
+      <input type="number" id="GQty" value="0" min="0">
+    </div>
+    <div class="product">
+      <p>豚丼</p>
+      <img src="images/buta_don_.jpg" alt="豚丼">
+      <p>¥1250</p>
+      <input type="number" id="BQty" value="0" min="0">
+    </div>
+    <div class="product">
+      <p>鶏ネギ丼</p>
+      <img src="images/chicken_egg_don_.jpg" alt="鶏ネギ丼">
+      <p>¥770</p>
+      <input type="number" id="CQty" value="0" min="0">
+    </div>
+    <div class="product">
+      <p>海鮮丼</p>
+      <img src="images/kaisen_don_.jpg" alt="海鮮丼">
+      <p>¥1550</p>
+      <input type="number" id="KQty" value="0" min="0">
+    </div>
+    <div class="product">
+      <p>マグロ丼</p>
+      <img src="images/maguro_don_.jpg" alt="マグロ丼">
+      <p>¥1150</p>
+      <input type="number" id="MQty" value="0" min="0">
+    </div>
+    <div class="product">
+        <p>かつ丼</p>
+        <img src="images/katsudon.jpg" alt="マグロ丼">
+        <p>¥1050</p>
+        <input type="number" id="KaQty" value="0" min="0">
+      </div>
+      <div class="product">
+        <p>うなぎ丼</p>
+        <img src="images/unagi_.jpg" alt="マグロ丼">
+        <p>¥2200</p>
+        <input type="number" id="UQty" value="0" min="0">
+      </div>
+      <div class="product">
+        <p>天丼</p>
+        <img src="images/tendon_.jpg" alt="マグロ丼">
+        <p>¥1330</p>
+        <input type="number" id="TQty" value="0" min="0">
+      </div>
+      <div class="product">
+        <p>サーモン丼</p>
+        <img src="images/salmon_don_.jpg" alt="マグロ丼">
+        <p>¥1250</p>
+        <input type="number" id="SQty" value="0" min="0">
+      </div>
+      <div class="product">
+        <p>野菜丼</p>
+        <img src="images/vegetable_don.jpg" alt="野菜丼">
+        <p>¥750</p>
+        <input type="number" id="VQty" value="0" min="0">
+      </div>
+      <div class="product">
+        <p>親子丼</p>
+        <img src="images/oyako_don.jpg" alt="親子丼">
+        <p>¥990</p>
+        <input type="number" id="OQty" value="0" min="0">
+      </div>
+  </div>
+  <h3>セット・ご飯量・ドリンクの追加</h3>
+
+  <div style="margin: 20px;">
+  
+    <p>＋¥200で <strong>セット（味噌汁・お新香付き）</strong> にできます。</p>
+      
+    <div class="product-container">
+      <div class="product">
+      <p>セットにする</p>
+      <img src="images/set_.jpg" alt="セット">
+      <p>¥200</p>
+      <input type="number" id="setQty" value="0" min="0" >
+    </p>
+    </div>
+    </div>
+    <br><br>
+    
+    <!-- Price details for different rice sizes -->
+    
+    <p>大盛り: ¥100 / 特盛り: ¥200</p><br>
+    
+    <div class="product-container">
+      <div class="product">
+        <p>大盛り</p>
+        <img src="images/omori.jpg" alt="大盛り">
+        <p>¥100</p>
+        <input type="number" id="largeQty" value="0" min="0">
+      </div>
+      <div class="product">
+        <p>特盛り</p>
+        <img src="images/toku-mori.jpg" alt="特盛り">
+        <p>¥200</p>
+        <input type="number" id="extraLargeQty" value="0" min="0">
+      </div>
+  </div>
+
+<button onclick="placeOrder()">注文する</button>
+
+<button class="back-button" onclick="goBack()">← 戻る</button>
+
+  <footer>
+    <p>&copy; 2025 Hsu Myat Paing (24CA0117), All rights reserved.</p>
+  </footer>
+
+
+
+</body>
+</html>

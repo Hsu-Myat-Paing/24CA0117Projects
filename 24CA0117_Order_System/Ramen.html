@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>母の味処 - ラーメンメニュー</title>
+  <link rel="stylesheet" href="decor.css">
+  <script src="order.js"></script>
+</head>
+<body>
+  <h1>母の味処</h1>
+
+  <h2>ラーメン注文システム</h2>
+
+  <h2>商品選択</h2>
+
+  <div class="product-container">
+    <div class="product">
+      <p>醤油ラーメン</p>
+      <img src="images/Shoyu-Ramen-.jpg" alt="醤油ラーメン">
+      <p>¥1100</p>
+      <input type="number" id="shoyuQty" value="0" min="0">
+    </div>
+    <div class="product">
+      <p>味噌ラーメン</p>
+      <img src="images/miso-ramen.jpg" alt="味噌ラーメン">
+      <p>¥1100</p>
+      <input type="number" id="misoQty" value="0" min="0">
+    </div>
+    <div class="product">
+      <p>塩ラーメン</p>
+      <img src="images/Shio-Ramen-.jpg" alt="塩ラーメン">
+      <p>¥1100</p>
+      <input type="number" id="shioQty" value="0" min="0">
+    </div>
+    <div class="product">
+      <p>豚骨ラーメン</p>
+      <img src="images/tonkotsu-ramen.jpg" alt="豚骨ラーメン">
+      <p>¥1200</p>
+      <input type="number" id="tonkotsuQty" value="0" min="0">
+    </div>
+    <div class="product">
+      <p>辛味噌ラーメン</p>
+      <img src="images/kara-miso.jpg" alt="辛味噌ラーメン">
+      <p>¥1100</p>
+      <input type="number" id="spicyMisoQty" value="0" min="0">
+    </div>
+    <div class="product">
+        <p>チャーシューラーメン</p>
+        <img src="images/chashu-ramen.jpg" alt="チャーシューラーメン">
+        <p>¥2500</p>
+        <input type="number" id="chashuRamenoQty" value="0" min="0">
+      </div>
+      <div class="product">
+        <p>担々麵</p>
+        <img src="images/tantanmen.jpg" alt="担々麵">
+        <p>¥1100</p>
+        <input type="number" id="tantanmen" value="0" min="0">
+      </div>
+      <div class="product">
+        <p>帆立塩ラーメン</p>
+        <img src="images/hotate-shio-ramen.jpg" alt="帆立塩ラーメン">
+        <p>¥1800</p>
+        <input type="number" id="hotateShioRamenoQty" value="0" min="0">
+      </div> 
+      <div class="product">
+        <p>牛肉ラーメン</p>
+        <img src="images/beef-ramen-.jpg" alt="牛肉ラーメン">
+        <p>¥1500</p>
+        <input type="number" id="beefRamenoQty" value="0" min="0">
+      </div> 
+      <div class="product">
+        <p>辛キムチラーメン</p>
+        <img src="images/spicy_kimchi_ramen.jpg" alt="辛キムチラーメン">
+        <p>¥1200</p>
+        <input type="number" id="spicykimchiQty" value="0" min="0">
+      </div>
+     <div class="product">
+        <p>野菜たぷりラーメン</p>
+        <img src="images/vegetable-ramen.jpg" alt="野菜たぷりラーメン">
+        <p>¥1100</p>
+        <input type="number" id="vegetableramenoQty" value="0" min="0">
+      </div> 
+
+  </div>
+
+  <!-- Added separate closing for the previous section -->
+  <h3>トッピングを追加</h3>
+  <div class="product-container">
+    <div class="product">
+      <p>味玉</p>
+      <img src="images/egg.jpg" alt="味玉">
+      <p>¥120</p>
+      <input type="number" id="ajitamaQty" value="0" min="0">
+    </div>
+    <div class="product">
+      <p>ライス</p>
+      <img src="images/rice_.jpg" alt="ライス">
+      <p>¥100</p>
+      <input type="number" id="riceQty" value="0" min="0">
+    </div>
+    <div class="product">
+      <p>チャーシュー</p>
+      <img src="images/cha-shu.jpg" alt="チャーシュー">
+      <p>¥300</p>
+      <input type="number" id="chashuQty" value="0" min="0">
+    </div>
+    <div class="product">
+      <p>のり</p>
+      <img src="images/nori.jpg" alt="のり">
+      <p>¥100</p>
+      <input type="number" id="noriQty" value="0" min="0">
+    </div>
+    <div class="product">
+      <p>バター</p>
+      <img src="images/butter-.jpg" alt="バター">
+      <p>¥100</p>
+      <input type="number" id="butterQty" value="0" min="0">
+    </div>
+  </div>
+
+  <h3>ドリンク</h3>
+  <div class="product-container">
+    <div class="product">
+      <p>緑茶</p>
+      <img src="images/ryokucha_.jpg" alt="緑茶">
+      <p>¥240</p>
+      <input type="number" id="greenTeaQty" value="0" min="0">
+    </div>
+    <div class="product">
+      <p>ウーロン茶</p>
+      <img src="images/uron_cha_.jpg" alt="ウーロン茶">
+      <p>¥240</p>
+      <input type="number" id="oolongTeaQty" value="0" min="0">
+    </div>
+    <div class="product">
+      <p>コーラ</p>
+      <img src="images/cola_.jpg" alt="コーラ">
+      <p>¥240</p>
+      <input type="number" id="colaQty" value="0" min="0">
+    </div>
+    <div class="product">
+      <p>オレンジジュース</p>
+      <img src="images/orange_juice_.jpg" alt="オレンジジュース">
+      <p>¥240</p>
+      <input type="number" id="OrQty" value="0" min="0">
+    </div>
+    <div class="product">
+      <p>生ビール</p>
+      <img src="images/beer_.jpg" alt="生ビール">
+      <p>¥560</p>
+      <input type="number" id="BeerQty" value="0" min="0">
+    </div>
+  </div>
+
+  <button onclick="placeOrder()">注文する</button>
+
+  <div class="nav-button-container">
+    <button class="back-button" onclick="window.location.href='eat-in_menu.html'">← 戻る</button>
+   
+  </div>
+  <footer>
+    <p>&copy; 2025 Hsu Myat Paing (24CA0117), All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
